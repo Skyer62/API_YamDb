@@ -23,6 +23,7 @@ jobs:
       run: |
         cd api/
         flake8
+        cd ./
         python manage.py test
 
     - name: Pytest
