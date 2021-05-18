@@ -102,7 +102,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -149,4 +148,3 @@ dmypy.json
 static/
 posts/static/
 media/
-
