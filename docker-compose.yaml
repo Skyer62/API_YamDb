@@ -1,13 +1,6 @@
 version: '3.8'
 
 services:
-  yamdb_final:
-    build: .
-    depends_on:
-      - nginx
-    image:
-      skyer62/yamdb_final:latest
-
   db:
     image: postgres:12.4
     volumes:
@@ -36,6 +29,13 @@ services:
       - media_value:/var/html/media/
     depends_on:
       - web
+
+  yamdb_final:
+    build: .
+    depends_on:
+      - nginx
+    image:
+      skyer62/yamdb_final:latest
 
 volumes:
   postgres_data:
