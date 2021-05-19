@@ -34,7 +34,7 @@ services:
     image:
       skyer62/yamdb_final:latest
     volumes:
-      - /code
+      - ./code/
 
 volumes:
   postgres_data:
