@@ -1,7 +1,9 @@
 version: '3.8'
 
 services:
-  image:
+  yamdb_final:
+    build: .
+    image:
       skyer62/yamdb_final:latest
 
   db:
