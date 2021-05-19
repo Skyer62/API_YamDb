@@ -33,6 +33,8 @@ services:
   yamdb_final:
     image:
       skyer62/yamdb_final:latest
+    volumes:
+      - ./
 
 volumes:
   postgres_data:
