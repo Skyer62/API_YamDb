@@ -1,5 +1,9 @@
 version: '3.8'
 
+yamdb_final:
+  image:
+    skyer62/yamdb_final:latest
+
 services:
   db:
     image: postgres:12.4
@@ -30,11 +34,11 @@ services:
     depends_on:
       - web
 
-  yamdb_final:
-    image:
-      skyer62/yamdb_final:latest
-    volumes:
-      - ./code/
+  # yamdb_final:
+  #   image:
+  #     skyer62/yamdb_final:latest
+  #   volumes:
+  #     - ./code/
 
 volumes:
   postgres_data:
