@@ -31,9 +31,6 @@ services:
       - web
 
   yamdb_final:
-    build: .
-    depends_on:
-      - nginx
     image:
       skyer62/yamdb_final:latest
 
