@@ -1,12 +1,14 @@
 version: '3.8'
 
-yamdb_final:
-  image:
-    skyer62/yamdb_final:latest
-  depends_on:
-      - nginx
 
 services:
+  yamdb_final:
+    image:
+      skyer62/yamdb_final:latest
+    build: .
+    depends_on:
+      - nginx
+
   db:
     image: postgres:12.4
     volumes:
