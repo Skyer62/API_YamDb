@@ -32,7 +32,7 @@ services:
 
   yamdb_final:
     image:
-      yamdb_final:latest
+      skyer62/yamdb_final:latest
     depends_on:
       - nginx
 
