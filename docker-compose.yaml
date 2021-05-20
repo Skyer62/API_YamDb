@@ -5,6 +5,8 @@ services:
   skyer62:
     image:
       skyer62/yamdb_final:latest
+    build: .
+
   db:
     image: postgres:12.4
     volumes:
