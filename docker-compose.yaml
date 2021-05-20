@@ -38,11 +38,6 @@ services:
     depends_on:
       - web
 
-  # yamdb_final:
-  #   image:
-  #     skyer62/yamdb_final:latest
-  #   volumes:
-  #     - ./code/
 
 volumes:
   postgres_data:
