@@ -1,6 +1,3 @@
-image:
-  skyer62/yamdb_final:latest
-
 version: '3.8'
 
 
@@ -13,6 +10,8 @@ services:
       - ./.env
 
   web:
+    image:
+      skyer62/yamdb_final:latest
     build: .
     restart: always
     volumes:
