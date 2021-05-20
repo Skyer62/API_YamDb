@@ -1,3 +1,6 @@
+image:
+  skyer62/yamdb_final:latest
+
 version: '3.8'
 
 
@@ -31,11 +34,10 @@ services:
     depends_on:
       - web
 
-  yamdb_final:
-    image:
-      skyer62/yamdb_final:latest
-    depends_on:
-      - web
+  # yamdb_final:
+
+  #   depends_on:
+  #     - web
 
 
 volumes:
