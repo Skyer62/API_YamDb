@@ -2,11 +2,6 @@ version: '3.8'
 
 
 services:
-  skyer62:
-    image:
-      skyer62/yamdb_final:latest
-    build: .
-
   db:
     image: postgres:12.4
     volumes:
@@ -15,6 +10,8 @@ services:
       - ./.env
 
   web:
+    image:
+      skyer62/yamdb_final:latest
     build: .
     restart: always
     volumes:
