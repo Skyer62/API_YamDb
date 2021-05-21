@@ -13,6 +13,7 @@ services:
     image:
       skyer62/yamdb_final:latest
     build: .
+    command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
     restart: always
     volumes:
       - static_value:/code/static/
