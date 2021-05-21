@@ -50,6 +50,7 @@ jobs:
           with:
             push: true
             tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_PROJECT }}:latest
+
   create_env:
     name: Create .env file
       runs-on: ubuntu-latest
