@@ -14,6 +14,7 @@ services:
       skyer62/yamdb_final:latest
     build: .
     command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
+    # убрав эту команду промучался 4 дня, почему же падает веб, в итоге наставник сказал вернуть эту команду, а объяснить почему же не команда из Dockerfile так и не смог
     restart: always
     volumes:
       - static_value:/code/static/

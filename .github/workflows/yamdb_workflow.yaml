@@ -75,6 +75,10 @@ jobs:
 
   deploy:
       runs-on: ubuntu-latest
+      on:
+        push:
+          branches:
+            - master
       needs: create_env
       steps:
       - name: executing remote ssh commands to deploy
