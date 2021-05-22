@@ -75,11 +75,8 @@ jobs:
 
   deploy:
       runs-on: ubuntu-latest
-      on:
-        push:
-          branches:
-            - master
       needs: create_env
+      if: github.ref == 'refs/heads/master'
       steps:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
