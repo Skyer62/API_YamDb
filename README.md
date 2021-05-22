@@ -5,7 +5,7 @@
 - Python + Django REST Framework
 - Simple JWT - работа с токеном
 - Django-filter - фильтрация запросов
-- SQLite3 - база данных
+- PostgreSQL - база данных
 - Git - система контроля версий
 # Установка
 1. Клонирйте репозиторий с проектом
