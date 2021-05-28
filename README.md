@@ -43,4 +43,4 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 Полная документация (redoc.yaml) доступна по адресу http://127.0.0.1/redoc/
 
-# Актуальный адрес сайта: 84.252.136.83
+# Актуальный адрес сайта: 84.252.136.83/api/v1
