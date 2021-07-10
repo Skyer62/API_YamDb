@@ -18,8 +18,8 @@ DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres(example)
 POSTGRES_USER=postgres(example)
 POSTGRES_PASSWORD=postgres(example)
-DB_HOST=db
-DB_PORT=5432
+DB_HOST=db(example)
+DB_PORT=5432(example)
 SECRET_KEY=123123123132(example)
 
 ```
